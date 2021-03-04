@@ -1,27 +1,28 @@
 package com.Tutorial;
 
-  class Toko_Online{
-      String nama;
-      String alamat;
-      int Kode_Pos;
+ class Anjing{
+     String Nama_Anjing;
+     int Umur_Anjing;
+      int Jumlah_Anjig;
 
-      Toko_Online(String matoa , String jalan, int kode){
-          nama = matoa;
-          alamat = jalan;
-          Kode_Pos = kode;
+      Anjing (String zoro, Integer umur, Integer jumlah){
+
+          Nama_Anjing = zoro;
+          Umur_Anjing = umur;
+          Jumlah_Anjig = jumlah;
       }
+ }
 
 
-  }
-
- public class Main {
+public class Main {
      public static void main (String[] args){
-         Toko_Online tokominuman = new Toko_Online("Toko Keren ", "impres ",95111);
-         System.out.println(tokominuman.nama);
-         System.out.println(tokominuman.alamat);
-         System.out.println(tokominuman.Kode_Pos);
 
+         Anjing ajing = new Anjing("Zoro Anjing Nakal", 1 , 7);
+         System.out.println(ajing.Nama_Anjing);
+         System.out.println(ajing.Umur_Anjing);
+         System.out.println(ajing.Jumlah_Anjig);
 
 
      }
+
 }
