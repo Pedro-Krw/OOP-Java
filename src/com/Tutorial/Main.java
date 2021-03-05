@@ -1,28 +1,29 @@
 package com.Tutorial;
 
- class Anjing{
-     String Nama_Anjing;
-     int Umur_Anjing;
-      int Jumlah_Anjig;
+  class Barang {
+      String Nama_Barang;
+      String Jumlah_Barang;
+      String Tanggal_Barang;
 
-      Anjing (String zoro, Integer umur, Integer jumlah){
+//      constactor
 
-          Nama_Anjing = zoro;
-          Umur_Anjing = umur;
-          Jumlah_Anjig = jumlah;
+      Barang(String Nama_Barang , String Jumlah_Barang , String Tanggal_Barang){
+          this.Nama_Barang = Nama_Barang;
+          this.Jumlah_Barang = Jumlah_Barang;
+          this.Tanggal_Barang = Tanggal_Barang;
+
+          System.out.println("Nama Barang :" + Nama_Barang);
+          System.out.println("jumlah Barang :" + Jumlah_Barang);
+          System.out.println("Tanggal Barang Datang :" + Tanggal_Barang);
       }
- }
+  }
 
 
-public class Main {
-     public static void main (String[] args){
 
-         Anjing ajing = new Anjing("Zoro Anjing Nakal", 1 , 7);
-         System.out.println(ajing.Nama_Anjing);
-         System.out.println(ajing.Umur_Anjing);
-         System.out.println(ajing.Jumlah_Anjig);
+ public class Main {
+//Object
+      public static void main(String[] args){
+          Barang Barang = new Barang(" Laptop Asus Rog", " 2", " 23 Maret 2021");
 
-
-     }
-
+      }
 }
