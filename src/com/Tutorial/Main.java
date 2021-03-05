@@ -1,29 +1,27 @@
-package com.Tutorial;
+package  com.Tutorial;
 
-  class Barang {
-      String Nama_Barang;
-      String Jumlah_Barang;
-      String Tanggal_Barang;
+     class Nama_HandPhoe{
+         String Nama;
+         String Harga;
+         String kamera;
 
-//      constactor
+         Nama_HandPhoe(String Nama_Handphone , String Harga, String kamera){
+             this.Nama = Nama_Handphone;
+             this.Harga = Harga;
+             this.kamera = kamera;
+         }
 
-      Barang(String Nama_Barang , String Jumlah_Barang , String Tanggal_Barang){
-          this.Nama_Barang = Nama_Barang;
-          this.Jumlah_Barang = Jumlah_Barang;
-          this.Tanggal_Barang = Tanggal_Barang;
+         void Show(){
+             System.out.println("Nama Merek HandPhone : " + Nama);
+             System.out.println("Harga Barang : " + Harga);
+             System.out.println("Ukuran Kamera : " + kamera);
+         }
 
-          System.out.println("Nama Barang :" + Nama_Barang);
-          System.out.println("jumlah Barang :" + Jumlah_Barang);
-          System.out.println("Tanggal Barang Datang :" + Tanggal_Barang);
-      }
-  }
-
-
+     }
 
  public class Main {
-//Object
-      public static void main(String[] args){
-          Barang Barang = new Barang(" Laptop Asus Rog", " 2", " 23 Maret 2021");
-
-      }
+     public static void main(String[] args){
+         Nama_HandPhoe NamaHandPhone = new Nama_HandPhoe("Samsung" , "2 Juta" ,"20 megapixel");
+         NamaHandPhone.Show();
+     }
 }
