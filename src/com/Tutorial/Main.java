@@ -1,27 +1,34 @@
-package  com.Tutorial;
+package com.Tutorial;
 
-     class Nama_HandPhoe{
-         String Nama;
-         String Harga;
-         String kamera;
 
-         Nama_HandPhoe(String Nama_Handphone , String Harga, String kamera){
-             this.Nama = Nama_Handphone;
-             this.Harga = Harga;
-             this.kamera = kamera;
-         }
+class Merek{
+       String nama;
+       String harga;
+       String banyak;
 
-         void Show(){
-             System.out.println("Nama Merek HandPhone : " + Nama);
-             System.out.println("Harga Barang : " + Harga);
-             System.out.println("Ukuran Kamera : " + kamera);
-         }
+       Merek(String nama, String harga , String banyak){
+           this.nama = nama;
+           this.harga = harga;
+           this.banyak = banyak;
+       }
 
-     }
+       void Tampilan(){
+           System.out.println("Nama Motor : "+ nama);
+           System.out.println("Harga Motor : " + harga);
+           System.out.println("Jumlah Motor : "+ banyak);
+       }
+
+   }
+
+
+
+
+
 
  public class Main {
-     public static void main(String[] args){
-         Nama_HandPhoe NamaHandPhone = new Nama_HandPhoe("Samsung" , "2 Juta" ,"20 megapixel");
-         NamaHandPhone.Show();
+
+     public static void main (String[]args){
+         Merek Merek = new Merek("Honda", "30 Juta", "15 Unit");
+         Merek.Tampilan();
      }
 }
