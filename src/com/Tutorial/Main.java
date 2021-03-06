@@ -1,34 +1,30 @@
 package com.Tutorial;
 
+    class Rumah{
+        String nama;
+        String alamat;
+        double ukuran;
 
-class Merek{
-       String nama;
-       String harga;
-       String banyak;
+        Rumah(String nama, String alamat, Double ukuran){
+            this.nama = nama;
+            this.alamat = alamat;
+            this.ukuran = ukuran;
+        }
 
-       Merek(String nama, String harga , String banyak){
-           this.nama = nama;
-           this.harga = harga;
-           this.banyak = banyak;
-       }
+         void show (){
+             System.out.println("Nama Perumahan : " + nama);
+             System.out.println("Alamat Perumahan : " + alamat);
+             System.out.println("Ukuran Rumah : " + ukuran);
+         }
 
-       void Tampilan(){
-           System.out.println("Nama Motor : "+ nama);
-           System.out.println("Harga Motor : " + harga);
-           System.out.println("Jumlah Motor : "+ banyak);
-       }
-
-   }
-
-
-
+    }
 
 
 
  public class Main {
+     public static void main(String[] args){
+         Rumah Rumah = new Rumah("Perumahan Griya Mandow" , "Jlan.Mandow Dalam" , 0.20);
+         Rumah.show();
 
-     public static void main (String[]args){
-         Merek Merek = new Merek("Honda", "30 Juta", "15 Unit");
-         Merek.Tampilan();
      }
 }
