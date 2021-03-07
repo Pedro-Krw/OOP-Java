@@ -1,30 +1,65 @@
 package com.Tutorial;
 
-    class Rumah{
-        String nama;
-        String alamat;
-        double ukuran;
+//Player
+class Player{
+    String Nama;
+    Double Health;
+    int Level;
+    //    Object Data
+    Armor armor;
+    Weapon weapon;
 
-        Rumah(String nama, String alamat, Double ukuran){
-            this.nama = nama;
-            this.alamat = alamat;
-            this.ukuran = ukuran;
-        }
-
-         void show (){
-             System.out.println("Nama Perumahan : " + nama);
-             System.out.println("Alamat Perumahan : " + alamat);
-             System.out.println("Ukuran Rumah : " + ukuran);
-         }
-
+    Player (String Nama , Double Health){
+        this.Nama = Nama;
+        this.Health = Health;
     }
 
+    void show (Weapon weapon ){
+        this.weapon = weapon;
+    }
+
+}
+
+//Weapon
+class Weapon{
+    Double attackPower;
+    String nama;
+    Weapon (String nama,Double attackPower){
+        this.attackPower = attackPower;
+        this.nama = nama;
+
+    }
+    void display (){
+        System.out.println("Weapon : " + this.nama + "Power : " + this.attackPower);
+    }
+
+}
+
+//Armor
+class Armor {
+    Double DefancePower;
+
+    Armor (Double DefancePower){
+        this.DefancePower = DefancePower;
+    }
+
+}
 
 
- public class Main {
-     public static void main(String[] args){
-         Rumah Rumah = new Rumah("Perumahan Griya Mandow" , "Jlan.Mandow Dalam" , 0.20);
-         Rumah.show();
+public class Main {
+    public static void main(String[] args){
 
-     }
+//        Membuat Object Player
+        Player player1 = new Player("Bobi" , 1.000);
+//        Object Ke 2
+        Weapon pedang = new Weapon("Pedang Baja ", 20.000);
+//        Armor
+        Armor Baju = new Armor(5.000);
+//        Mengambil Barang
+        player1.show(pedang);
+        player1.weapon.display();
+
+
+
+    }
 }
