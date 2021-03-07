@@ -1,6 +1,9 @@
 package com.tutorial;
 
- class  Buku{
+import java.nio.channels.Pipe;
+import java.security.Security;
+
+class  Buku{
      String Nama;
      String Penulis;
 
@@ -17,7 +20,9 @@ package com.tutorial;
 public class Main {
     public static void main(String [] args){
         Buku Buku1 = new Buku("Mencari Masa Depan ", "Pedro T Korwa");
+        String addres2 = Integer.toHexString(System.identityHashCode(Buku1));
         Buku1.show();
-
+        System.out.println(addres2);
+        System.out.println(Buku1);
     }
 }
