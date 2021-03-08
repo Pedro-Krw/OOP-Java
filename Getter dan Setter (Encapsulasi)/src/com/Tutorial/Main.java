@@ -1,29 +1,25 @@
 package com.Tutorial;
 
-   class Komik{
-       private int nomor;
-       public String nama;
+   class Daftar {
+      /*ini adalah modifier*/public /* ini adalah member*/  String Lagu;
+       private String musisi;
 
-       Komik(int nomor , String nama){
-           this.nomor = nomor;
-           this.nama = nama;
+       Daftar(String Lagu , String musisi){
+           this.Lagu = Lagu;
+           this.musisi = musisi;
 
-       }
-       void show (){
-           System.out.println("\nNama Komik\t : " + this.nama);
-           System.out.println("Chapter : " + this.nomor);
-
-       }
-   }
-
-
- public class Main {
-      public static void main(String[]args){
-          Komik Komik = new Komik(23 , "komik naruto");
-          Komik.nama = "Minato";
-          System.out.println(Komik.nama);
-
-
+  }
+      void show(){
+          System.out.println("\nJudul Lagu : " + this.Lagu);
+          System.out.println("Nama Musisi : " + this.musisi);
       }
 
+   }
+
+   public class Main {
+       public static void main (String[] args){
+           Daftar Bagian = new Daftar("To The Bone " , "Pamugkas");
+           System.out.println(Bagian.Lagu);
+
+       }
 }
