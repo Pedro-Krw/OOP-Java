@@ -1,25 +1,26 @@
 package com.Tutorial;
 
-   class Daftar {
-      /*ini adalah modifier*/public /* ini adalah member*/  String Lagu;
-       private String musisi;
+   class Data{
+       public int intPublic;
+       private int intPrivate;
 
-       Daftar(String Lagu , String musisi){
-           this.Lagu = Lagu;
-           this.musisi = musisi;
+       Data(){
+           this.intPublic = 0;
+           this.intPrivate = 0;
+       }
 
-  }
-      void show(){
-          System.out.println("\nJudul Lagu : " + this.Lagu);
-          System.out.println("Nama Musisi : " + this.musisi);
-      }
-
+       public int getIntPrivate() {
+           return this.intPrivate;
+       }
    }
 
-   public class Main {
-       public static void main (String[] args){
-           Daftar Bagian = new Daftar("To The Bone " , "Pamugkas");
-           System.out.println(Bagian.Lagu);
+  public class Main {
+      public static void main(String[] args){
+       Data Data = new Data();
+          Data.intPublic = 10;
+          System.out.println(Data.intPublic);
+          int agnka = Data.getIntPrivate();
+          System.out.println(agnka);
 
-       }
+      }
 }
