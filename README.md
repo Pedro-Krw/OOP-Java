@@ -1,1 +1,1 @@
-![image](githubusercontent.com/59316805/110334839-c7f17e00-8055-11eb-974b-7bce5d7de88d.png)
+![Pengertian-dan-Konsep-Dasar-Object-Oriented-Programming-OOP-1](https://user-images.githubusercontent.com/59316805/110335224-333b5000-8056-11eb-915f-f62934ee8419.png)
