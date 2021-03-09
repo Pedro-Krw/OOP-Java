@@ -7,7 +7,7 @@ package com.Tutorial;
 
        Data(){
            this.intPublic = 0;
-           this.intPrivate = 0;
+           this.intPrivate = 21;
        }
 // ini bagian GETTER
        public int getIntPrivate() {
