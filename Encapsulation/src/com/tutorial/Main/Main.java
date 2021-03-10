@@ -1,7 +1,7 @@
 package com.tutorial.Main;
 
 class Player{
-    String nama;
+    public String nama;
     private int darah;
     private  int armor;
 
@@ -21,6 +21,7 @@ class Player{
  public class Main {
      public static void  main(String[] args){
          Player Player = new Player("Martin" );
+         Player.nama = "Budi";
          Player.show();
 
      }

@@ -22,6 +22,9 @@ public class Main {
         Buku Buku1 = new Buku("Mencari Masa Depan ", "Pedro T Korwa");
         String addres2 = Integer.toHexString(System.identityHashCode(Buku1));
         Buku1.show();
+
+
+
         System.out.println(addres2);
         System.out.println(Buku1);
     }
