@@ -5,6 +5,7 @@ class Player{
     String Nama;
     Double Health;
     int Level;
+    int Attack;
     //    Object Data
     Armor armor;
     Weapon weapon;
