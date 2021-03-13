@@ -1,25 +1,24 @@
 package com.tutorial.Main;
-   class player{
-       public String name;
-       private Integer atrtack;
-       private Integer Speed;
+ class Player{
+     private String nama;
+     private Integer power;
+     private Integer Health;
 
-       player(String name , Integer atrtack, Integer Speed){
-           this.atrtack = atrtack;
-           this.name = name;
-           this.Speed = Speed;
-       }
-     void show(){
-         System.out.println("Nama : " + this.name);
-         System.out.println("Attack : " +this.atrtack);
-         System.out.println("Speed : " + this.Speed);
+     Player(String nama , Integer power , Integer Health){
+         this.nama = nama;
+         this.power = power;
+         this.Health = Health;
      }
+     void show(){
+         System.out.println("Nama : " + this.nama );
+         System.out.println("Kekuatan : " + this.power);
+         System.out.println("Darah : " + this.Health);
+     }
+ }
 
-   }
-
-   public class Main {
-       public static void main(String[]args) {
-       player player = new player("Ica" , 20 , 100);
-       player.show();
-       }
-       }
+ public class Main {
+     public static void main(String [] args){
+    Player Player = new Player("MArtin" ,200 , 100);
+    Player.show();
+     }
+}
