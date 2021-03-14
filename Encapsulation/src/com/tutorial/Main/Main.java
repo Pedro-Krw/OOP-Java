@@ -1,76 +1,54 @@
-
 package com.tutorial.Main;
-class Player{
-    private String nama;
-    private Integer power;
-    private Integer Health;
-    private Armor armor1;
-    private senjata Senjata_Rahasia;
 
-    Player(String nama , Integer power , Integer Health){
-        this.nama = nama;
-        this.power = power;
-        this.Health = Health;
-    }
-    public void show(){
-        System.out.println("Nama     : " + this.nama );
-        System.out.println("Kekuatan : " + this.power);
-        System.out.println("Darah    : " + this.maxHealth());
-    }
+ class Player{
+     public String name;
+     private Integer Health;
+     private Integer Demage;
+     private Armor armor;
 
+     Player(String name , Integer Health , Integer Demage){
+         this.name = name;
+         this.Health = Health;
+         this.Demage = Demage;
+     }
+      public void Show(){
+          System.out.println("Nama   : " + this.name);
+          System.out.println("Health : " + this.MaxHealth());
+          System.out.println("Demage : " + this.Demage);
+      }
+     public void setArmor(Armor armor) {
+         this.armor = armor;
+     }
 
-    public int maxHealth(){
-        return this.Health + this.armor1.getHealth();
-    }
+     public int MaxHealth(){
+         return this.Health + this.armor.getAddHealth()*10;
+      }
 
-    public void setArmor(Armor armor) {
-        this.armor1 = armor;
-    }
+ }
 
-    public void setSenjata_Rahasia(senjata senjata){
-        this.Senjata_Rahasia = senjata;
-    }
+  class Armor{
+     private String Name;
+     private  Integer Demage;
+     private Integer AddHealth;
 
+    public Armor(String Name , Integer demage , Integer addHealth){
+         this.Name = Name;
+         this.Demage = demage;
+         this.AddHealth = addHealth;
+     }
 
-}
-
-class Armor{
-    private String armor;
-    private Integer kekuatan;
-    private  Integer health;
-
-    Armor(String armor , Integer kekuatan , Integer Health){
-        this.armor = armor;
-        this.kekuatan = kekuatan;
-        this.health = Health;
-    }
-
-    public int getHealth() {
-        return this.kekuatan * 10 + this.health;
-    }
-}
-
-class senjata{
-    private String nama;
-    private Integer kekuatan;
-
-    senjata(String nama, Integer kekuatan){
-        this.nama = nama;
-        this.kekuatan = kekuatan;
-    }
-}
+      public Integer getAddHealth() {
+          return this.Demage *10 + this.AddHealth;
+      }
+  }
 
 
 
-
-
-public class Main {
-    public static void main(String [] args){
-        Player Player = new Player("Martin" ,200 , 100);
-        Player.show();
-        Armor armor1 = new Armor("Baju emas" , 200 , 500);
-        Player.setArmor(armor1);
-        senjata senjata1 = new senjata("Basoka" , 5000);
-        Player.setSenjata_Rahasia(senjata1);
-    }
+ public class Main {
+     public static void main(String[]args){
+     Player player1 = new Player("Martin" , 100 , 2000);
+     Armor armor1 = new Armor("Baju Emas" , 2500 , 150);
+     player1.Show();
+     player1.setArmor(armor1);
+     }
 }
