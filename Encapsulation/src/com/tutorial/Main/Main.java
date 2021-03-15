@@ -22,7 +22,7 @@ class Player{
     }
 
     public int MaxHealth(){
-        return this.Health + this.armor.getAddHealth()*10;
+        return this.Health + this.armor.getAddHealth();
     }
 
 }
@@ -39,7 +39,7 @@ class Armor{
     }
 
     public Integer getAddHealth() {
-        return this.Demage *10 + this.AddHealth;
+        return this.Demage + this.AddHealth;
     }
 }
 
