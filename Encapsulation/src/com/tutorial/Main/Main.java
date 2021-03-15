@@ -13,7 +13,7 @@ class Player{
     }
     public void Show(){
         System.out.println("Nama   : " + this.name);
-        System.out.println("Health : " + this.MaxHealth());
+        System.out.println("Health : " + this.Health);
         System.out.println("Demage : " + this.Demage);
         this.armor.getAddHealth();
     }
