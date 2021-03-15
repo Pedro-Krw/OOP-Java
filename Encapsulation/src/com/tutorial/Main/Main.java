@@ -13,7 +13,7 @@ class Player{
     }
     public void Show(){
         System.out.println("Nama   : " + this.name);
-        System.out.println("Health : " + this.Health);
+        System.out.println("Health : " + this.MaxHealth());
         System.out.println("Demage : " + this.Demage);
         this.armor.getAddHealth();
     }
@@ -49,6 +49,7 @@ public class Main {
     public static void main(String[]args){
         Player player1 = new Player("Martin" , 100 , 2000  );
         Armor armor = new Armor("Baju Emas" , 2500 , 150);
+        player1.setArmor(armor);
         player1.Show();
     }
 }
