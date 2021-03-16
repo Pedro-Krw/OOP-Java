@@ -15,7 +15,7 @@ package com.tutorial.Main;
 
       public void Show(){
           System.out.println("Nama   : " + this.nama );
-          System.out.println("Health : " + this.Health);
+          System.out.println("Health : " + this.MaxHealth());
           System.out.println("Weapon : " + this.Weapon);
       }
 
