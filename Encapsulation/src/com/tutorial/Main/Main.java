@@ -3,10 +3,10 @@ package com.tutorial.Main;
  class Player{
       private String nama;
       private Integer Health;
-      private Integer Weapon;
+      private String Weapon;
       Armor armor;
 
-      Player(String nama , Integer Health , Integer weapon){
+      Player(String nama , Integer Health , String weapon){
           this.nama = nama;
           this.Health = Health;
           this.Weapon = weapon;
@@ -49,7 +49,7 @@ package com.tutorial.Main;
 
  public class Main {
      public static void main(String[] args) {
-         Player player1 = new Player("Martin" , 150 , 300);
+         Player player1 = new Player("Martin" , 150 , "Parang Sabel");
          Armor armor = new Armor("Parang" , 350 , 5000);
          player1.setArmor(armor);
          player1.Show();
