@@ -51,6 +51,7 @@ package com.tutorial.Main;
      public static void main(String[] args) {
          Player player1 = new Player("Martin" , 150 , 300);
          Armor armor = new Armor("Parang" , 350 , 5000);
+         player1.setArmor(armor);
          player1.Show();
      }
 }
