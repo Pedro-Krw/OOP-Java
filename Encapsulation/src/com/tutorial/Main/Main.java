@@ -1,55 +1,56 @@
 package com.tutorial.Main;
 
-class Player{
-    public String name;
-    private Integer Health;
-    private Integer Demage;
-    private Armor  armor;
+ class Player {
+     private String nama;
+     private Integer Health;
+     private Integer Attack;
+     private senjata_rahasia Senjat1;
 
-    Player(String name , Integer Health , Integer Demage ){
-        this.name = name;
-        this.Health = Health;
-        this.Demage = Demage;
-    }
-    public void Show(){
-        System.out.println("Nama   : " + this.name);
-        System.out.println("Health : " + this.MaxHealth());
-        System.out.println("Demage : " + this.Demage);
-        this.armor.getAddHealth();
-    }
-    public Armor setArmor(Armor armor) {
-        return this.armor = armor;
-    }
+     Player(String nama, Integer Health, Integer Attack) {
+         this.nama = nama;
+         this.Health = Health;
+         this.Attack = Attack;
 
-    public int MaxHealth(){
-        return this.Health + this.armor.getAddHealth();
-    }
+     }
 
-}
+     public void show() {
+         System.out.println("Nama   : " + this.nama);
+         System.out.println("Health : " + this.Health);
+         System.out.println("Attack : " + this.Attack);
+     }
 
-class Armor{
-    private String Name;
-    private  Integer Demage;
-    private Integer AddHealth;
+     public void setKumpulan(senjata_rahasia senjat1) {
+         this.nama = nama;
+     }
 
-    public Armor(String Name , Integer demage , Integer addHealth){
-        this.Name = Name;
-        this.Demage = demage;
-        this.AddHealth = addHealth;
-    }
+     public String MaxHealth() {
+         return this.Health + this.Senjat1.getParang();
 
-    public Integer getAddHealth() {
-        return this.Demage + this.AddHealth;
-    }
-}
+     }
+
+     static class senjata_rahasia {
+         private String nama;
+         private Integer true_Damage;
+         private Integer Bonus_Attack;
+
+         senjata_rahasia(String nama, Integer true_Damage, Integer Bonus) {
+             this.nama = nama;
+             this.true_Damage = true_Damage;
+             this.Bonus_Attack = Bonus;
+
+         }
+
+         public String getParang() {
+             return this.nama + this.true_Damage + this.Bonus_Attack + this.Bonus_Attack;
+         }
+     }
 
 
-
-public class Main {
-    public static void main(String[]args){
-        Player player1 = new Player("Martin" , 100 , 2000  );
-        Armor armor = new Armor("Baju Emas" , 2500 , 150);
-        player1.setArmor(armor);
-        player1.Show();
-    }
-}
+     public static class Main {
+         public void main(String[] args) {
+             Player player1 = new Player("tinus", 1200, 2000);
+             senjata_rahasia senjat = new senjata_rahasia("Ak-47", 400, 150);
+             player1.show();
+         }
+     }
+ }
