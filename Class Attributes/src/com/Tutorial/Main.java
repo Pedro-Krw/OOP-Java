@@ -11,7 +11,7 @@ class Playing{
 
      }
     void SeTting(String Tipe){
-         type = Tipe;
+       this.type = Tipe;
      }
 
      public void show(){
@@ -26,10 +26,10 @@ class Playing{
       public static void main(String[] args) {
           Playing playing1 = new Playing("Martin");
           Playing playing2 = new Playing("Joker");
+          playing1.SeTting("kamu");
           playing2.show();
           playing1.show();
           System.out.println(playing1.type);
           System.out.println(playing2.type);
-          playing1.SeTting("orang lain");
       }
 }
