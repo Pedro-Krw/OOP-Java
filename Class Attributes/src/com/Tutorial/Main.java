@@ -1,6 +1,8 @@
 package com.Tutorial;
 
- class Playing{
+import java.awt.*;
+
+class Playing{
      static String type = "Display";
      private String nama;
 
@@ -24,5 +26,6 @@ package com.Tutorial;
           playing2.show();
           playing1.show();
           System.out.println(playing1.type);
+          System.out.println(playing2.type);
       }
 }
