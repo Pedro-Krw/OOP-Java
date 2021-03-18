@@ -1,9 +1,8 @@
 package com.Tutorial;
 
-import java.awt.*;
 
 class Playing{
-     static String type = "Display";
+     static String type = "warki";
      private String nama;
 
      Playing(String nama){
@@ -11,6 +10,10 @@ class Playing{
 
 
      }
+    void SeTting(String Tipe){
+         type = Tipe;
+     }
+
      public void show(){
          System.out.println("nama : " + this.nama);
      }
@@ -27,5 +30,6 @@ class Playing{
           playing1.show();
           System.out.println(playing1.type);
           System.out.println(playing2.type);
+          playing1.SeTting("orang lain");
       }
 }
