@@ -1,6 +1,7 @@
 package com.Tutorial;
 
  class Playing{
+     static String type = "Display";
      private String nama;
 
      Playing(String nama){
@@ -22,5 +23,6 @@ package com.Tutorial;
           Playing playing2 = new Playing("Joker");
           playing2.show();
           playing1.show();
+          System.out.println(playing1.type);
       }
 }
