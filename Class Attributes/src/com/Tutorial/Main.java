@@ -1,8 +1,24 @@
 package com.Tutorial;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("test 1");
-    }
+ class Playing{
+     private String nama;
 
+     Playing(String nama){
+         this.nama = nama;
+
+
+     }
+     public void show(){
+         System.out.println("nama : " + this.nama);
+     }
+
+ }
+
+
+
+  public class Main {
+      public static void main(String[] args) {
+          Playing playing1 = new Playing("Martin");
+          playing1.show();
+      }
 }
