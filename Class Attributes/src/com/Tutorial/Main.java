@@ -2,7 +2,7 @@ package com.Tutorial;
 
 
 class Playing{
-     static String type = "warki";
+     static String type = "Playing";
      private String nama;
 
      Playing(String nama){
@@ -11,7 +11,7 @@ class Playing{
 
      }
     void SeTting(String Tipe){
-       this.type = Tipe;
+      Playing.type = Tipe;
      }
 
      public void show(){
@@ -26,9 +26,10 @@ class Playing{
       public static void main(String[] args) {
           Playing playing1 = new Playing("Martin");
           Playing playing2 = new Playing("Joker");
-          playing1.SeTting("kamu");
+          playing1.SeTting("Waramber");
           playing2.show();
           playing1.show();
+          System.out.println(Playing.type);
           System.out.println(playing1.type);
           System.out.println(playing2.type);
       }
