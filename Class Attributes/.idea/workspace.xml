@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7fed9c8-7610-43c2-a42c-9badee8331db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/Tutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Tutorial/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multi File Package/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Multi File Package/Multi File Package.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
