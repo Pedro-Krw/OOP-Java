@@ -1,13 +1,16 @@
 package com.tutorial;
 
 public class Player {
+    public static int jumlahPlayer;
     String nama;
 
     Player(String nama){
+        Player.jumlahPlayer++;
         this.nama = nama;
     }
     Player(){
-        this.nama = "Player";
+        Player.jumlahPlayer++;
+        this.nama = "Player : " + Player.jumlahPlayer;
 
     }
 
