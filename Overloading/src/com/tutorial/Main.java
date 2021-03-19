@@ -1,6 +1,6 @@
 package com.tutorial;
 
-// Overloading
+// Overloading construkto
 public class Main {
     public static void main(String[] args) {
       Player player1 = new Player("Martin");
@@ -11,5 +11,11 @@ public class Main {
       player2.show();
       player3.show();
       player4.show();
+
+//  0verloading method
+        int a = Hitungan.tambahan(12,2);
+        System.out.println(a);
+
+
     }
 }
