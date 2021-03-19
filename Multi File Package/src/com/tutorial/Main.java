@@ -1,11 +1,13 @@
 package com.tutorial;
+//import ZoroMain.nama;
+//import ZoroMain.sa;
 import Console.Console;
 
-class Player{
+class Player1{
      private String Orang;
      private Integer jumlah;
 
-     Player(String nama , Integer jumlah){
+     Player1(String nama , Integer jumlah){
          this.Orang = nama;
          this.jumlah = jumlah;
      }
@@ -20,9 +22,9 @@ class Player{
 
  public class Main {
      public static void main(String[] args) {
-         Player player1 = new Player("Martin" , 20);
+         Player1 player1 = new Player1("Martin" , 20);
          player1.show();
-         Console.log("Jamal");
+         Console.log("Console Active");
 
 
      }
