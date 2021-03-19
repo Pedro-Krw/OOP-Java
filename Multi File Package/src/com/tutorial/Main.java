@@ -1,6 +1,7 @@
 package com.tutorial;
 import Console.Console;
- class Player{
+
+class Player{
      private String Orang;
      private Integer jumlah;
 
@@ -22,6 +23,7 @@ import Console.Console;
          Player player1 = new Player("Martin" , 20);
          player1.show();
          Console.log("Jamal");
+
 
      }
 }
