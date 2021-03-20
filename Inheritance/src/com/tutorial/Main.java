@@ -6,6 +6,10 @@ package com.tutorial;
      Hero(){
          this.nama = nama;
      }
+     void show(){
+         System.out.println("Nama : " + this.nama);
+     }
+
  }
 
  class Hero_tank extends Hero{
@@ -21,10 +25,10 @@ public class Main {
         Hero hero2 = new Hero_tank();
         Hero hero3 = new Hero_Marksman();
         hero1.nama = "Nama : Martin";
-        System.out.println(hero1.nama);
+        hero1.show();
         hero2.nama = "Nama : Kibax";
-        System.out.println(hero2.nama);
+        hero2.show();
         hero3.nama = "Nama : Zoroman";
-        System.out.println(hero3.nama);
+        hero3.show();
     }
 }
