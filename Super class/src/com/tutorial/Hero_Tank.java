@@ -1,12 +1,9 @@
 package com.tutorial;
 
-public class Hero_tank extends Main {
-    String nama;
+ public class Hero_tank extends Hero {
+     String nama = "sa";
 
-    Hero_tank(String nama ){
-        this.nama = nama;
-    }
-    void display(){
-        System.out.println("Nama : " + this.nama);
-    }
+     void display(){
+         System.out.println("nama : " + super.nama);
+     }
 }
